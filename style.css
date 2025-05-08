@@ -1,0 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
+:root{--font-ar:'Cairo',sans-serif;--font-en:'Nunito',sans-serif;--line-h:1.7;--red:#D71920;--green:#007A33;--gold:#F4D35E;--beige:#FAF3E0;--dark:#333;}
+body{font-family:var(--font-ar);line-height:var(--line-h);text-align:justify;direction:rtl;margin:0;padding:0;background:var(--beige);color:var(--dark);}
+.navbar{display:flex;justify-content:space-around;align-items:center;background:linear-gradient(90deg,var(--green),var(--red));padding:1rem;position:sticky;top:0;z-index:1000;}
+.navbar h1{margin:0;color:white;font-size:1.5rem;} .nav-links{list-style:none;display:flex;gap:0.5rem;padding:0;margin:0;}
+.nav-links a{color:white;text-decoration:none;padding:0.5rem 1rem;border-radius:5px;transition:background 0.3s;} .nav-links a:hover{background:var(--gold);color:var(--dark);}
+.hero{text-align:center;padding:100px 20px;background:linear-gradient(to bottom, var(--red), var(--gold));color:white;}
+.section{max-width:1000px;margin:40px auto;padding:20px;background:white;border-radius:10px;box-shadow:0 4px 6px rgba(0,0,0,0.1);}
+.section h2{margin-top:0;border-bottom:3px solid var(--red);display:inline-block;padding-bottom:5px;} 
+.section p{margin-bottom:1rem;transition:background 0.3s;padding:0.5rem;border-radius:5px;} .section p:hover{background:rgba(244,211,94,0.2);}
+.gallery, .video-container{display:flex;gap:15px;flex-wrap:wrap;justify-content:center;margin-top:20px;}
+.gallery img{width:calc(33% - 10px);height:auto;object-fit:cover;border:2px solid var(--gold);border-radius:8px;transition:transform 0.3s;}
+.gallery img:hover{transform:scale(1.03);border-color:var(--red);}
+.responsive-video{width:100%;max-width:800px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.2);}
+#downloads ul{display:flex;flex-wrap:wrap;gap:1rem;padding:0;list-style:none;} #downloads li a{display:inline-block;padding:0.75rem 1.5rem;background:var(--green);color:#fff;text-decoration:none;border-radius:5px;font-weight:600;transition:background 0.3s;}
+#downloads li a:hover{background:var(--red);} #uae-map{height:400px;width:100%;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,0.1);}
+footer{background:var(--dark);color:white;text-align:center;padding:1rem;margin-top:40px;}
